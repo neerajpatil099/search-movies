@@ -1,8 +1,9 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 export default function MovieCard({movie}) {
   return (
-    <div className='movie'>
+    <div className='movie' id={nanoid()} >
     <div>
     <p>{movie.Year}</p>
     </div>
